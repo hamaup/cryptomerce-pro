@@ -11,7 +11,7 @@ https://slash-fi.gitbook.io/docs/whitepaper/slash-project-white-paper
 
 ### 概要
 Slash Web3 payments ボタンをお会計（チェックアウト）画面に配置しました。
-これにより、お客様がSlash決済を開始することができます。決済が開始されると決済ステータス変更、オーダー情報作成します。
+決済が開始されると決済ステータス変更、オーダー情報作成します。
 Slash Web3 paymentsから返ってくる結果に基づいて、決済成功もしくは失敗を判断し、注文履歴を確認できます。
 
 ### ステータスコード
@@ -41,7 +41,27 @@ metamaskなどのウォレットアプリから元のECサイトの画面に戻�
 決済結果画面へリダイレクトしているので、ECサイトの画面に戻ると自動的に決済結果画面になります。
 もし決済画面になっていない場合でも、再度Slash Web3 payments ボタンをクリックすると決済結果画面になります。
 
+### デモ
+
+#### PC
+
+https://user-images.githubusercontent.com/32893785/219312005-0c138ca6-35d4-46dd-b8b7-1ebf8d9323dc.mov
+
+#### モバイル
+
+https://user-images.githubusercontent.com/32893785/219312140-add2939e-8a87-4298-9d1f-f368ff187617.mov
+
+
+
 
 ### Thank for
 https://github.com/FarStep131/docker-rails-example
 https://github.com/nickjj/docker-rails-example/
+
+
+https://user-images.githubusercontent.com/32893785/219312098-994c8eca-7379-4203-ab2e-e615312934d8.mov
+
+
+
+
+
