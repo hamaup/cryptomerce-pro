@@ -1,4 +1,17 @@
+
 ## Slash Web3 Payment実装
+
+### デモ
+
+#### PC
+
+https://user-images.githubusercontent.com/32893785/219312005-0c138ca6-35d4-46dd-b8b7-1ebf8d9323dc.mov
+
+#### モバイル
+
+https://user-images.githubusercontent.com/32893785/219312448-d53a44a3-039b-4284-8372-67937a1b46f0.mov
+
+### 概要
 
 Railsで作成したweb2　越境ECサービスにSlash Web3 paymentsを実装します。
 
@@ -40,16 +53,6 @@ ECサイト側に、Slashから決済処理結果を受け取る（kickback）Pa
 metamaskなどのウォレットアプリから元のECサイトの画面に戻る必要がありますが、決済完了後、決済処理結果通知を受け取り処理で
 決済結果画面へリダイレクトしているので、ECサイトの画面に戻ると自動的に決済結果画面になります。
 もし決済画面になっていない場合でも、再度Slash Web3 payments ボタンをクリックすると決済結果画面になります。
-
-### デモ
-
-#### PC
-
-https://user-images.githubusercontent.com/32893785/219312005-0c138ca6-35d4-46dd-b8b7-1ebf8d9323dc.mov
-
-#### モバイル
-
-https://user-images.githubusercontent.com/32893785/219312448-d53a44a3-039b-4284-8372-67937a1b46f0.mov
 
 
 ### Thank for
