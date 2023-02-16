@@ -52,14 +52,9 @@ https://user-images.githubusercontent.com/32893785/219312005-0c138ca6-35d4-46dd-
 https://user-images.githubusercontent.com/32893785/219312140-add2939e-8a87-4298-9d1f-f368ff187617.mov
 
 
-
-
 ### Thank for
 https://github.com/FarStep131/docker-rails-example
 https://github.com/nickjj/docker-rails-example/
-
-
-https://user-images.githubusercontent.com/32893785/219312098-994c8eca-7379-4203-ab2e-e615312934d8.mov
 
 
 
