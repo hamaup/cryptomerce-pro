@@ -27,8 +27,8 @@ Slash Web3 paymentsから返ってくる結果に基づいて、決済成功も�
 Payment Request APIを呼び出すと、Payment Tokenが返ってきます。
 https://testnet.slash.fi/admin/dashboard
 
-「Slash Web3 payments」ボタンをクリックすると、Payment Tokenが付与されたURLにアクセスし
-Windows WidgetとしてSlash Paymentの画面が元の画面上に表示され、安心感を持って決済を簡単にスムーズに開始させることができます。
+「Slash Web3 payments」ボタンをクリックすると、Payment Tokenが付与されたURLにアクセスすると
+決済画面に切り替わり簡単にスムーズに決済を開始させることができます。
 モバイル版はSlash Paymentの画面は別タブで開きます。
 
 ### Payment Result API
