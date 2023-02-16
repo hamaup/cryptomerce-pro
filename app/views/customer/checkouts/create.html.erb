@@ -1,0 +1,154 @@
+<div class="mb-8 text-center">
+  <h1 class="text-3xl font-bold">
+    📱 <%= t('checkouts.Checkout') %>
+  </h1>
+</div>
+
+<% if @cart_items.count == 0 %>
+  <div class='mx-auto max-w-3xl'>
+    <p class='mb-8 text-xl text-center'><%= t('checkouts.No item') %></p>
+    <div class='flex justify-center'>
+      <%= link_to products_path, class: 'group inline-flex items-center justify-center overflow-hidden rounded-lg bg-gradient-to-br from-purple-600 to-blue-500 p-0.5 font-medium text-gray-900 hover:text-white focus:ring-4 focus:ring-blue-300 group-hover:from-purple-600 group-hover:to-blue-500' do %>
+        <span class='rounded-md bg-white px-5 py-2.5 transition-all duration-75 ease-in group-hover:bg-opacity-0'>
+          <%= t('checkouts.Find Products') %>
+        </span>
+      <% end %>
+    </div>
+  </div>
+<% else %>
+  <div class="xl:flex">
+    <div class="px-6 flex justify-center mb-7 xl:w-2/3">
+      <div class="overflow-x-auto">
+        <table>
+          <thead>
+            <tr class="bg-gray-100 text-gray-600 uppercase text-sm leading-normal">
+              <th class="py-4 px-8"><%= t('checkouts.product') %></th>
+              <th class="py-4 px-8"><%= t('checkouts.price') %></th>
+              <th class="py-4 px-8"><%= t('checkouts.quantity') %></th>
+              <th class="py-4 px-8"><%= t('checkouts.total') %></th>
+              <th class="py-4 px-8"></th>
+            </tr>
+          </thead>
+          <tbody class="text-center">
+            <% @cart_items.each do |cart_item| %>
+              <tr class="focus:outline-none h-16 border border-gray-100 rounded">
+                <td class="p-3 whitespace-nowrap">
+                  <div class="flex flex-col justify-center mx-6">
+                    <span class="font-bold text-xl"><%= cart_item.product.name %></span>
+                    <span class="text-sm"><%= cart_item.product.stock %> left in stock</span>
+                  </div>
+                </td>
+                <td class="p-3">
+                  <span class="text-lg"><%= number_to_currency(cart_item.product.price, strip_insignificant_zeros: true) %></span>
+                </td>
+                <td class="p-3">
+                  <div class="flex justify-center">
+
+                    <span class="mx-5 text-lg"><%= cart_item.quantity %></span>
+
+                  </div>
+                </td>
+                <td class="p-3">
+                  <span class="text-lg"><%= number_to_currency(cart_item.line_total, strip_insignificant_zeros: true) %></span>
+                </td>
+              </tr>
+            <% end %>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="px-6 xl:w-1/3">
+      <h2 class="font-semibold text-2xl border-b pb-6 text-center">
+        <%= t('checkouts.Cart Summary') %>
+      </h2>
+      <div class="flex justify-between my-6">
+        <span class="font-semibold text-lg uppercase"><%= t('checkouts.subtotal') %></span>
+        <span class="font-semibold text-lg"><%= number_to_currency(@total, strip_insignificant_zeros: true) %></span>
+      </div>
+      <div class="flex justify-between my-6">
+        <span class="font-semibold text-lg uppercase"><%= t('checkouts.postage') %></span>
+        <span class="font-semibold text-lg"><%= number_to_currency(POSTAGE, strip_insignificant_zeros: true) %></span>
+      </div>
+      <div class="flex justify-between my-6">
+        <span class="font-semibold text-lg uppercase"><%= t('checkouts.total') %></span>
+        <span class="font-semibold text-lg"><%= number_to_currency(@total + POSTAGE, strip_insignificant_zeros: true) %></span>
+      </div>
+      <h2 class="font-semibold text-2xl border-b pb-6 text-center">
+       <%= t('checkouts.Shipping Address') %>
+      </h2>
+      <div class="flex justify-between my-6">
+        <span class="font-semibold text-lg uppercase"><%= t('checkouts.Postal code') %></span>
+        <span class="font-semibold text-lg"><%= @shipping_address.postal_code %></span>
+      </div>
+      <div class="flex justify-between my-6">
+        <span class="font-semibold text-lg uppercase"><%= t('checkouts.prefecture') %></span>
+        <span class="font-semibold text-lg"><%= @shipping_address.prefecture %></span>
+      </div>
+      <div class="flex justify-between my-6">
+        <span class="font-semibold text-lg uppercase"><%= t('checkouts.address1') %></span>
+        <span class="font-semibold text-lg"><%= @shipping_address.address1 %></span>
+      </div>
+      <div class="flex justify-between my-6">
+        <span class="font-semibold text-lg uppercase"><%= t('checkouts.address2') %></span>
+        <span class="font-semibold text-lg"><%= @shipping_address.address2 %></span>
+      </div>
+
+      <div class='flex justify-between my-6'>
+        <button id="payment_button" type="button" onclick="callCheckout()">
+          <input id="payment_request_json" type="hidden" value=<%= @payment_request_json %> >
+          <input id="payment_request_uimode" type="hidden" value=<%= @payment_request_uimode %> >
+          <%= image_tag 'payment-button_dark_ver2-04.png', alt: 'Checkout' %>
+        </button>
+      </div>
+
+      <div id='payment_confirm_button' class='flex justify-between my-6' style='display:none'>
+        <%= button_to confirm_webhooks_path, method: :get, params: {payment_token: @payment_token },  data: { turbo: false }, class:'w-full cursor-pointer focus:outline-none text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2' do %>
+          <%= t('checkouts.Order Confirm') %>
+        <% end %>
+      </div>
+      <%= hidden_field_tag("alert1", t('checkouts.create.SlashAlert1'), id: "alert1") %>
+      <%= hidden_field_tag("alert2", t('checkouts.create.SlashAlert2'), id: "alert2") %>
+      <%= hidden_field_tag("alert3", t('checkouts.create.SlashAlert3'), id: "alert3") %>
+
+      <script src="https://slash.fi/stat/ww.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+      <script type="text/javascript">
+        const handlePaymentWindowClosed = async (paymentStatus, callbackParms) => {
+          console.log(paymentStatus)
+          if (paymentStatus === 1) { // success
+            alert(document.getElementById('alert1').value);
+            window.location.href = `/webhooks/confirm?payment_token=${callbackParms.payment_token}`
+          } else if (paymentStatus === 2) {  // failure
+            alert(document.getElementById('alert2').value);
+            window.location.href = `/webhooks/confirm?payment_token=${callbackParms.payment_token}`
+          } else {
+            alert(document.getElementById('alert3').value);
+          }
+        }
+        const openSlashPaymentsWindow = async (apiUrl) => {
+          // launching widget
+          window.SLASH_FIN.open(apiUrl, handlePaymentWindowClosed)
+        }
+        async function callCheckout(){
+          const payment_request_json = document.getElementById('payment_request_json').value
+          const payment_request = JSON.parse(payment_request_json);
+          const url = await axios.post("/webhooks/update_payment_status", {
+              payment_token: payment_request['token'],
+              status: "processing_payment"
+          })
+          .then(() => {
+            const payment_request_uimode = document.getElementById('payment_request_uimode').value
+            console.log(payment_request['url'])
+            if(payment_request_uimode == 'switchable'){
+              openSlashPaymentsWindow(payment_request['url'])
+            }else{
+              window.location.href = payment_request['url']
+            }
+          })
+          .catch(err => {
+              alert(document.getElementById('alert2').value);
+              window.location.href = `/webhooks/confirm?payment_token=${payment_request['token']}`
+          });
+        }
+      </script>
+<% end %>

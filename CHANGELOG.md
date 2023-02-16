@@ -21,10 +21,10 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 #### Languages and services
 
-- Update `Ruby` to `3.2.1`
+- Update `Ruby` to `3.2.0`
 - Update `Node` to `18.X`
 - Update `Postgres` to `15.1`
-- Update `Redis` to `7.0.8`
+- Update `Redis` to `7.0.7`
 
 #### Back-end dependencies
 
@@ -33,18 +33,18 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 - Update `minitest` to `5.17.0`
 - Update `pg` to `1.4.5`
 - Update `puma` to `6.0.2`
-- Update `rails` to `7.0.4.2`
-- Update `redis` to `5.0.6`
+- Update `rails` to `7.0.4`
+- Update `redis` to `5.0.2`
 - Update `sidekiq` to `7.0.3`
 - Update `stimulus-rails` to `1.2.1`
-- Update `turbo-rails` to `1.3.3`
+- Update `turbo-rails` to `1.3.2`
 
 #### Front-end dependencies
 
 - Update `@hotwired/stimulus` to `3.2.1`
-- Update `@hotwired/turbo-rails` to `7.25`
+- Update `@hotwired/turbo-rails` to `7.24`
 - Update `autoprefixer` to `10.4.13`
-- Update `esbuild` to `0.17.7`
+- Update `esbuild` to `0.16.17`
 - Update `postcss-import` to `15.1.0`
 - Update `postcss` to `8.4.21`
 - Update `tailwindcss` to `3.2.4`

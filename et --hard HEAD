@@ -1,0 +1,1458 @@
+[33mcommit f96a340cc6fe38022f00fca6a87a25c3186278ea[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Author: hamaup <32893785+hamaup@users.noreply.github.com>
+Date:   Sat Jan 21 02:18:35 2023 +0900
+
+    Implementing Authentication Functions with devise
+
+[33mcommit 8d0853bc1dcd8eaa80680114fe7fe7ce8fba61ee[m
+Author: hamaup <32893785+hamaup@users.noreply.github.com>
+Date:   Fri Jan 20 20:56:09 2023 +0900
+
+    setup project
+
+[33mcommit 3f424c1a864af8bc706be2bb2090269aa22e0f68[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Sat Jan 14 19:39:19 2023 -0500
+
+    Update front-end dependencies
+
+[33mcommit 81744a5738fe04f3bf34869775d201dd8b6fc3e7[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Sat Jan 14 19:37:37 2023 -0500
+
+    Update back-end dependencies
+
+[33mcommit 22bdb6df23f6ad92098a0d7eb66a832be5864e30[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Sat Jan 7 18:28:04 2023 -0500
+
+    Revert removing RAILS_ENV=test
+    
+    This caused a CI pipeline failure where assets weren't available.
+
+[33mcommit ef38fa310eb7f47bccc40c9b902702e28c928fed[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Sat Jan 7 18:01:17 2023 -0500
+
+    Remove unnecessary RAILS_ENV=test
+    
+    The rails test command will automatically set this for you.
+
+[33mcommit 9fc32d2a482b9d1bfd78d51b863bf0fa3aa30e3e[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Tue Jan 3 19:52:03 2023 -0500
+
+    Remove double comment characters
+    
+    This was from an old copy of these functions when they were in a
+    Makefile and were being parsed programmatically.
+
+[33mcommit 71085f3b9a4adaa3579ac20fefc0d87b346f1b46[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Sat Dec 31 09:42:06 2022 -0500
+
+    Remove --jobs $(nproc) flag from bundle install
+    
+    This is what bundler does by default. We should stick to only setting
+    flags that override default behavior.
+
+[33mcommit b9224036bbc9d8881a5f197917fd60046e90353b[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Fri Dec 30 05:45:15 2022 -0500
+
+    Update Redis to 7.0.7
+
+[33mcommit 57b7e08fc4276b38877958906827a9f415426c82[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Tue Dec 27 14:49:52 2022 -0500
+
+    Update front-end dependencies
+
+[33mcommit f51e9a4a57cb3d78491c636fb60eb5d6460a67db[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Tue Dec 27 14:46:35 2022 -0500
+
+    Update back-end dependencies
+
+[33mcommit dcae59dd80ea42979493aca68e62e2a522a459d8[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Tue Dec 27 14:44:50 2022 -0500
+
+    Update to Ruby 3.2.0
+
+[33mcommit fcadd2b6b53ccb0ca9e9140d6c7e6a67d14edb44[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Fri Dec 9 06:16:05 2022 -0500
+
+    Update front-end dependencies
+
+[33mcommit 0cdbde23fccafea11fdc88b42ac8c67eb4bada48[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Fri Dec 9 06:15:37 2022 -0500
+
+    Update back-end dependencies
+
+[33mcommit 2cf5ada57eedc52b9f24acc2efa9a5d87a85e8ce[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Fri Dec 9 05:56:59 2022 -0500
+
+    Update Ruby to 3.1.3
+
+[33mcommit c1734e2bdf2a2a89f557997224eba76e0f660076[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Mon Nov 28 12:43:25 2022 -0500
+
+    Update Stimulus to 3.2.0
+
+[33mcommit 3cc38e137d25ab38cded44841d5eb44792a3700c[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Sat Nov 19 09:41:24 2022 -0500
+
+    Remove set nounset from run script
+    
+    This may make an appearance again in the future if a workaround is
+    found.
+
+[33mcommit 5450b483c5cc7dfbf24a751b82eae401087d5184[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Sat Nov 19 09:41:06 2022 -0500
+
+    Update front-end dependencies
+
+[33mcommit 154f859130c0d9281c686220adf4886465eebb9f[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Sat Nov 19 09:38:04 2022 -0500
+
+    Update back-end dependencies
+
+[33mcommit 71c1da33c1be7983a56ab6709c60c43a36588112[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Sat Nov 19 09:35:41 2022 -0500
+
+    Update Postgres to 15.1
+
+[33mcommit 811a83a8146128fafb09608e7d78505c1137c1e8[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Sun Oct 30 17:25:57 2022 -0400
+
+    Update Hadolint to throw error on style warnings
+
+[33mcommit 380a116a9dc88d4fd6249fa375347262b3de9344[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Sat Oct 29 13:57:12 2022 -0400
+
+    Rename RedisClient to RedisConn for Redis 5
+    
+    It seems Redis 5 defined their own RedisClient module and this was a
+    module name conflict.
+
+[33mcommit eb8e0830064d9008861053f492d333fb368bb90d[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Sat Oct 29 12:47:21 2022 -0400
+
+    Update front-end dependencies
+
+[33mcommit 8b1c24e319b690913a71a3a8294b25d628f7d08d[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Sat Oct 29 12:43:56 2022 -0400
+
+    Update back-end dependencies
+
+[33mcommit c00079070607829110d61b11dd2d7bfa9d4aba6e[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Sat Oct 29 11:48:51 2022 -0400
+
+    Update Postgres to 15.0
+
+[33mcommit 790a6b3bde9a540ff885cacdc9267df130701d05[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Wed Oct 12 19:34:38 2022 -0400
+
+    Replace Redis.current with RedisClient.current
+    
+    This needs to be addressed because in Redis 5.X Redis.current is
+    removed.
+
+[33mcommit 995abed6ff0c29640a3fa2689a07dbf686f8c605[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Wed Oct 12 19:33:50 2022 -0400
+
+    Add docker compose logs to CI
+
+[33mcommit f6b2feeeb02dbedd4492b23328bcec4dbc336012[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Wed Oct 12 06:55:25 2022 -0400
+
+    Update front-end dependencies
+
+[33mcommit 1b3a5b5283095f143e88d4cb41f1225f8f961d12[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Wed Oct 12 06:53:28 2022 -0400
+
+    Update back-end dependencies
+
+[33mcommit 64055f0e42bb15d34e26c76e3964d613525602fe[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Wed Oct 12 06:50:50 2022 -0400
+
+    Update Node to 18.X
+
+[33mcommit 6f6984697de53854a2c8e354f7bf7e5c62420606[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Sat Oct 1 10:02:51 2022 -0400
+
+    Add support for setting a custom uid:gid
+    
+    This could come in handy if your dev box or server doesn't have a user
+    and group id of 1000:1000. Most folks won't need to adjust this.
+
+[33mcommit 768ba830eca40383ab758a517e9a541a51927575[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Sun Sep 25 09:16:17 2022 -0400
+
+    Update front-end dependencies
+
+[33mcommit 6b8bf08770ea376f58229cf69e45ff5e324b7dad[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Sun Sep 25 09:10:58 2022 -0400
+
+    Update back-end dependencies
+
+[33mcommit 6efa170879b5eb56aaba781aa631dd33fe61febe[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Sun Sep 25 07:31:34 2022 -0400
+
+    Update Redis to 7.0.5
+
+[33mcommit c2a031bc84dd9c14898232b42ae869ba7491daee[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Sun Sep 25 07:31:15 2022 -0400
+
+    Use PORT env var for the web service
+
+[33mcommit 333c143951f23e09b2028d004c0754229afa2192[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Sun Sep 11 13:59:49 2022 -0400
+
+    Make manifest file checker more robust
+    
+    Find was throwing an error if no existing manifests were available. Now
+    it works with or without there being existing manifest files.
+    
+    Basically now it works for your first deploy and all future deploys.
+    
+    I'm not terribly happy with how many shellcheck ignores were needed but
+    we're searching for a pattern. If anyone wants to open a PR with an
+    alternative implementation without needing ignores go for it.
+
+[33mcommit fa84229663b0352be613e869011d5a18f4372c38[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Sun Sep 11 13:21:47 2022 -0400
+
+    Fix incorrect asset digest being used in prod
+    
+    If multiple sprockets files are found, Rails doesn't pick the latest one
+    based on the modified time of the file.
+    
+    Instead it picks the first one it finds. This could (and will) lead to
+    Rails loading old versions of your assets since it's not using the latest
+    manifest file.
+    
+    This patch will delete all of the sprockets files except the last built
+    one and it does it in a way where there will never be a blip of time
+    there's not at least one sprockets file available to serve.
+
+[33mcommit 5e9e182a4031b63ad2db621bbde06621cab2b277[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Sun Sep 11 10:42:52 2022 -0400
+
+    Rename run bash to shell
+    
+    This is a bit more descriptive and portable because the Docker image
+    being used may or may not use bash.
+
+[33mcommit 9beecdfc4e75a146b13f410b0ef6f08e549d9365[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Thu Sep 8 21:18:21 2022 -0400
+
+    Update readme checkout tag
+
+[33mcommit 0da6170f46f3c8cc7c52ddaba6bb59186430cd43[m[33m ([m[1;33mtag: 0.7.0[m[33m)[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Thu Sep 8 20:08:06 2022 -0400
+
+    Update Changelog and release 0.7.0
+
+[33mcommit 222fdacad9c868d2d2dacd06760840bd039cdfc3[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Thu Sep 8 19:56:15 2022 -0400
+
+    Remove support for Docker Compose v1
+    
+    v2 has been generally available for a while now and using profiles in
+    the way this project uses them requires v2, such as wanting to have
+    optional depends_on without Docker Compose error'ing out.
+    
+    It's really worth it to upgrade!
+
+[33mcommit 0e6acbccd35d07f110d4ffdd34c40aa7bca8f776[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Thu Sep 8 19:50:50 2022 -0400
+
+    Enable BuildKit by default
+    
+    It's not enabled by default on Linux systems at the time of this commit.
+    At some point we won't need to explicitly set it.
+
+[33mcommit ade2163a596b41ea63a18819a8c46e34598f7adb[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Thu Sep 8 08:52:00 2022 -0400
+
+    Fix permission issues in CI
+    
+    Previously the override file was here, I removed the line in a previous
+    commit since the override file doesn't exist.
+    
+    That means prior to this patch the js and css services still had the
+    volume in place and since CI runs with a different UID/GID, boom errors.
+    
+    This should fix it.
+
+[33mcommit c897a5cb143a3518384a8d053d8807b248fd20ec[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Thu Sep 8 08:37:51 2022 -0400
+
+    Help debug why CI is breaking part 2
+
+[33mcommit f6dbcc3ce7019d698b3cecb0b1f6b3bb0c8b1d0e[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Thu Sep 8 08:34:02 2022 -0400
+
+    Help debug why CI is breaking
+    
+    It's likely due to volume permissions but I can't replicate this locally
+    since all of my users have an id of 1000.
+    
+    It's interesting because this sed "trick" was working before.
+
+[33mcommit 2479333147dc6fd08aa54e6eefb1153ee8ab7445[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Thu Sep 8 08:08:57 2022 -0400
+
+    Check if Docker Compose v1 causes CI failures
+
+[33mcommit 29a479c09853dbf9d6786745a3130f609479174f[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Thu Sep 8 08:02:46 2022 -0400
+
+    Update GitHub Actions to use Ubuntu 22.04
+
+[33mcommit 3b94753dc04c50212da8a8ffd3c81084744ba918[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Thu Sep 8 07:54:27 2022 -0400
+
+    Remove override file reference in GitHub Actions
+
+[33mcommit a1e2c501b44c8eb36cb1519433998a0fee899d70[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Thu Sep 8 06:24:38 2022 -0400
+
+    Start using Docker Compose profiles
+
+[33mcommit a1ee547e24ad440acbaf136212664d9800ca7854[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Thu Sep 8 06:17:12 2022 -0400
+
+    Prevent docker-compose printing in the run script
+
+[33mcommit 4087e628e06da77118cc353dae9f3d52b0c572f5[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Sat Sep 3 09:49:50 2022 -0400
+
+    Fix comment for DOCKER_WEB_PORT_FORWARD
+
+[33mcommit 20d9acf9ed9e322ad3ec298c411d1d1070f42071[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Sat Sep 3 09:42:18 2022 -0400
+
+    Support both Docker Compose v1 and v2
+    
+    I don't want to drop v1 support yet since so many folks are still using
+    it and it's technically still opt-in for Docker Desktop at the time of
+    making this commit.
+    
+    Eventually this project will always use v2 but for now this seems like a
+    reasonable middleground to support both. The only real cost is if you
+    customize the run script with Docker Compose commands you need to
+    remember to reference $docker_compose instead of calling
+    `docker-compose` or `docker compose` directly.
+    
+    If anyone is curious I've fully moved to using Docker Compose v2 in
+    development and production.
+
+[33mcommit 10d29566fc8a762a6b985ece7b690f33dff82617[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Sat Sep 3 08:59:50 2022 -0400
+
+    Remove env_file property for Postgres and Redis
+    
+    If you run docker compose up -d it will recreate containers that need to
+    be recreated, which includes if a value in the .env file changed.
+    
+    This will speed up deployments since both services avoid being recreated now.
+
+[33mcommit eb96a2d7d69aa1ed57db43d854207dec0a99f1b4[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Sat Aug 13 08:48:02 2022 -0400
+
+    Add set -o nounset to run script
+    
+    I also split things up onto multiple lines to be more explicit on what
+    each flag does. It was weird to have set -eo pipeline which combined
+    both short and long form option names.
+
+[33mcommit 514f06047bbc6177351362640273f57813da1d4d[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Sat Aug 13 08:28:25 2022 -0400
+
+    Update front-end dependencies
+
+[33mcommit 0f52d73015cb2ab026e3fee23a3c339e11e4b79a[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Sat Aug 13 08:24:13 2022 -0400
+
+    Update back-end dependencies
+
+[33mcommit 351d3df8bc9793e1f52b30bfacf1ca2cd2ec2cde[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Sat Aug 13 07:05:39 2022 -0400
+
+    Update Redis to 7.0.4
+
+[33mcommit d47eb438d0dd6727e2b591322b96b35874a17598[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Sat Aug 13 07:04:50 2022 -0400
+
+    Update Postgres to 14.5
+
+[33mcommit e549fa3d7a356501d63bb8ff5e5757a243f3f7b2[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Wed Jul 13 05:39:03 2022 -0400
+
+    Update Rails to 7.0.3.1
+
+[33mcommit 727e1f90d339de9f7e53d4f443610b1f1b918896[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Sun Jul 3 09:54:18 2022 -0400
+
+    Update front-end dependencies
+
+[33mcommit 2267329a11468dcf4d092fd172cf97ef722d021b[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Sun Jul 3 09:51:05 2022 -0400
+
+    Update back-end dependencies
+
+[33mcommit 508e545130ff4083b1a1d5d53e963f0b95980aba[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Sun Jul 3 09:22:01 2022 -0400
+
+    Update Postgres and Redis
+
+[33mcommit d483555057ef1af1d33a5e1b7579c49a1c4509df[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Fri Jun 10 08:16:25 2022 -0400
+
+    Update front-end dependencies
+
+[33mcommit e08fc30ecf22ba1a8b8e893d3ab2600b6031238c[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Fri Jun 10 08:14:29 2022 -0400
+
+    Update back-end dependencies
+
+[33mcommit e21ce3f861b2822eac1d3bbd95d1f1e5a941301a[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Fri Jun 10 07:55:54 2022 -0400
+
+    Update Postgres and Redis
+
+[33mcommit 112de5246542b719601fb20419fd4d7a742cb478[m[33m ([m[1;33mtag: 0.6.0[m[33m)[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Sun May 15 10:29:19 2022 -0400
+
+    Update Changelog and release 0.6.0
+
+[33mcommit 5740dec083869af040c3251f5757d9cc364d4528[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Sun May 15 10:27:16 2022 -0400
+
+    Update Redis to 7.0.0
+
+[33mcommit 0f4985f063abf5367a674d8a11e252e91d3bfb41[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Sun May 15 10:26:51 2022 -0400
+
+    Update front-end dependencies
+
+[33mcommit e4eb7a1b1ae8d911ec018abb2241e4b2209a5a26[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Sun May 15 10:26:12 2022 -0400
+
+    Update back-end dependencies
+
+[33mcommit c32fcc08a887d69c9736368b9ce67abc3fad596e[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Fri Apr 22 06:55:11 2022 -0400
+
+    Update front-end dependencies
+
+[33mcommit aa816a3b9c23900818f1ae7fe115bb40bf13bdb9[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Fri Apr 22 06:54:05 2022 -0400
+
+    Update back-end dependencies
+
+[33mcommit b0c3b7047e47a8d9733f963e82e47ce8dfd17149[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Fri Apr 22 06:52:31 2022 -0400
+
+    Update Ruby to 3.1.2
+
+[33mcommit 3f5e55c5fab0abc04679a7512c6567a348bdb24a[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Sat Apr 9 08:50:59 2022 -0400
+
+    Update front-end dependencies
+
+[33mcommit 062575bbcae41a17cd2cb16f74ad4135e7b49403[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Sat Apr 9 08:50:09 2022 -0400
+
+    Update back-end dependencies
+
+[33mcommit aae0e9d3e136b58db24a4ac510169320149c11a7[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Fri Mar 18 19:24:05 2022 -0400
+
+    Update front-end dependencies
+
+[33mcommit 9997bb9756507c925b9aeb24ac7e084ac9629d52[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Fri Mar 18 19:00:20 2022 -0400
+
+    Update Rails to 7.0.2.3 and pg to 1.3.4
+
+[33mcommit d6e7e40ff0abf15f166f9f8ae86853e88e62fe07[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Sun Mar 13 14:53:58 2022 -0400
+
+    Add mini profilter config for Hotwire Turbo Drive
+
+[33mcommit 3af8e822b0b7b65d129ab47ec2a380672fe093c3[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Sat Mar 5 09:49:24 2022 -0500
+
+    Tighten up how I described both controllers
+
+[33mcommit ab3736bb835134f04865b1d73fbd40b74c6b3cb3[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Sat Mar 5 08:23:28 2022 -0500
+
+    Add dedicated health check controller
+
+[33mcommit 37423ee022dbe3cac14ab3ec713243a5a9508c7e[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Fri Mar 4 20:18:53 2022 -0500
+
+    Update front-end dependencies
+
+[33mcommit f7cafb54ac4854322cf76080ba32112aa4af22a8[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Fri Mar 4 20:14:35 2022 -0500
+
+    Update back-end dependencies
+
+[33mcommit 1cd57b02812515ade09bf924201412851f5e3bbe[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Sun Feb 20 12:22:47 2022 -0500
+
+    Add docs to fix an error after renaming the app
+
+[33mcommit 24c12669bd0f1fb24bf8f9d2fb4a5f667e53c248[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Sat Feb 19 09:26:13 2022 -0500
+
+    Update back-end dependencies
+
+[33mcommit d1ba6e58aa1205556a886d8fdc1c512b3617d0b0[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Sat Feb 19 09:22:24 2022 -0500
+
+    Update front-end dependencies
+
+[33mcommit e0032f0d50a4713c179affa70a955ee449c2d581[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Sat Feb 19 06:51:24 2022 -0500
+
+    Update Postgres to 14.2
+
+[33mcommit 58e231dd5227e8d8056eda1d21e99beb2ca2691d[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Sat Feb 19 06:46:05 2022 -0500
+
+    Update Ruby to 3.1.1
+
+[33mcommit a2c8d1c45790f30d3932f5e9bf37146d06e1fd6d[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Sat Feb 12 07:47:20 2022 -0500
+
+    Update Rails to 7.0.2.2
+    
+    https://rubyonrails.org/2022/2/11/Rails-7-0-2-2-6-1-4-6-6-0-4-6-and-5-2-6-2-have-been-released
+
+[33mcommit 6dd8001b206778f52349c9b9d6255147989ed1ae[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Wed Feb 9 07:26:27 2022 -0500
+
+    Update front-end dependencies
+
+[33mcommit db335e16576a48c7cdca99f79a8a655e236ee596[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Wed Feb 9 07:24:13 2022 -0500
+
+    Update back-end dependencies
+
+[33mcommit 80daf7a9c5c53b99df1f8ec9fb3710c51a6d084c[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Sun Jan 23 06:55:12 2022 -0500
+
+    Update front-end dependencies
+
+[33mcommit 7b17edff09b64d029dd69e7a65acc1b2fd0ce03a[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Sun Jan 23 06:54:35 2022 -0500
+
+    Update back-end dependencies
+
+[33mcommit 08af13dffc647174409fae4ee8d6d3b62209ec79[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Sat Jan 15 07:51:34 2022 -0500
+
+    Reference Rails 7.0.1 instead of 7.0.0
+
+[33mcommit 882fc15a0c2dd672d3c9539151bde3b8e6537e3a[m[33m ([m[1;33mtag: 0.5.0[m[33m)[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Sat Jan 15 07:48:49 2022 -0500
+
+    Update Changelog and release 0.5.0
+
+[33mcommit f2523e335dbc11e49e8c5ef17e82226fa46e50c5[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Sat Jan 15 07:46:59 2022 -0500
+
+    Update Ruby to 3.1.0
+
+[33mcommit 097888bf0e4899db85cd74eee25429993e27d6a2[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Sat Jan 15 07:35:59 2022 -0500
+
+    Update Node dependencies
+
+[33mcommit 718bbf152818a1f464783e7f68a6afd25c63621d[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Sat Jan 15 07:35:01 2022 -0500
+
+    Update Ruby dependencies
+
+[33mcommit 7714bc7bf7b0636975b4fe01b32506ac3ee726a5[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Mon Jan 3 19:02:51 2022 -0500
+
+    Update changelog link to issue 30
+
+[33mcommit ed7e99c52ab35e4d0143373342bafb14a8183319[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Mon Jan 3 18:58:26 2022 -0500
+
+    Fix Zeitwerk load error with Sidekiq
+    
+    This was reported as a potential fixed based on:
+      https://github.com/hotwired/turbo-rails/issues/285#issuecomment-1004395809
+    
+    The root cause isn't known at the time of making this commit but this
+    will at least let us run Active Jobs without errors for now.
+
+[33mcommit bfdbf3e1548e0940a891d1a020c151bd0e73a00c[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Sun Dec 26 12:59:05 2021 -0500
+
+    Remove optional semi-colon
+
+[33mcommit fcf92f7da97ada95ca97d8d4a669e1eb8a2fcb0c[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Sat Dec 25 19:26:25 2021 -0500
+
+    Remove ActiveStorage JavaScript package by default
+    
+    This feature isn't used in the example app and it's increasing the size
+    of the JS payload. It's easy enough to add it back in manually if you
+    use this feature in your application.
+
+[33mcommit 0f1bbde2e29bb418bb8c1ef6fccea71aefea688b[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Sat Dec 25 19:18:33 2021 -0500
+
+    Disable digesting assets in development
+
+[33mcommit 207c1fa16bd07db4ebc9ba01bd02e2c25cdc7fa2[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Sat Dec 25 19:11:45 2021 -0500
+
+    Don't delete old assets by default
+    
+    There is a slight blip between deleting the old assets and copying the
+    new ones where if someone were to make a request in between this period
+    of time they would get no assets served.
+    
+    The odds of this happening are extremely low since these operations are
+    nearly instant but still as a best practice if you want to clean up
+    older precompiled assets it's worth doing it in a cron job.
+    
+    With cp -r you can use the mtime of the manifest JSON file to delete
+    precompiled files that have an older mtime.
+
+[33mcommit 4685bd56ea710b28dea5b9ee24992f165456d608[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Sat Dec 25 19:03:45 2021 -0500
+
+    Update Bash shebang in Docker entrypoint script
+
+[33mcommit e78b0b59b7d97cb3a6f551378a5045005774d122[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Sun Dec 19 16:40:29 2021 -0500
+
+    Make the JS / CSS build condition more readable
+
+[33mcommit 160258d1356f6d6332ed7085f341c8c9be4c7e68[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Sun Dec 19 16:34:18 2021 -0500
+
+    Prevent JS / CSS --watch'ing with RAILS_ENV=test
+    
+    Without this it would watch during a test and hang indefinitely.
+
+[33mcommit f0aaf79d08d8adf44cbff3f223e0b42ebdb52df0[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Sun Dec 19 16:11:20 2021 -0500
+
+    Update Postgres to 14.1
+
+[33mcommit 1071f7b663ba1b1b09c053074d93a1a1fd348b7c[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Sun Dec 19 16:08:25 2021 -0500
+
+    Minify both JS and CSS only in production
+    
+    Until TailwindCSS supports being able to set its CLI options through its
+    config file I think we're kind of stuck creating a wrapper script.
+    
+    Technically esbuild supports a config file to set its CLI flags but for
+    now let's keep things consistent with wrapper scripts for both JS and CSS.
+
+[33mcommit 52033c0d3a1a7560908aa86f1b2445f9ef2783b6[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Sat Dec 18 14:34:20 2021 -0500
+
+    Remove cache back-end related comments
+
+[33mcommit fc06671da24960a6350b49446bbe9b6ff0be2ed8[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Sat Dec 18 14:32:23 2021 -0500
+
+    Move Action Cable configuration in 1 spot
+
+[33mcommit 23931bffab9bb014d8d9121467a6a5d8a73c963d[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Sat Dec 18 14:23:19 2021 -0500
+
+    Use double quotes in the Sidekiq route comments
+
+[33mcommit 00e6393c8e039687e1d560bf5a4cf93dc0dae217[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Sat Dec 18 12:14:50 2021 -0500
+
+    Clarify how the test -b flag works
+
+[33mcommit 2a8580a7dcfca7f278a55cd6ab6bd03838e7275e[m
+Merge: 6625230 c2b0a41
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Sat Dec 18 11:35:00 2021 -0500
+
+    Merge pull request #29 from nickjj/feature-rails-7-esbuild
+    
+    Upgrade to Rails 7 and swap Webpacker with esbuild
+
+[33mcommit c2b0a41643ba2787ebca2453ae4d13e4266b97f9[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Sat Dec 18 10:55:30 2021 -0500
+
+    Upgrade to Rails 7 and swap Webpacker with esbuild
+    
+    This is a big commit. The changelog sums most things up.
+
+[33mcommit 1f136a7b48650a0b0328abead86cfeb6f1c937c2[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Sat Dec 18 09:46:13 2021 -0500
+
+    Start using Docker Compose specification
+    
+    This requires using Docker Compose 1.27+ but this specification unifies
+    both v2 and v3.
+
+[33mcommit 662523098623322924d69d2467112c1ac28b8c23[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Thu Dec 9 19:32:58 2021 -0500
+
+    Update Tailwind to 3.0.0
+
+[33mcommit 572fbb5616ab9f2d3f00d5b07cb7f2ae2f8663f8[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Sat Oct 30 18:38:20 2021 -0400
+
+    Lint Dockerfile with hadolint
+
+[33mcommit b95da6e29ceea5cc266fd5798680bd9b5b3e24d8[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Sun Oct 10 09:36:02 2021 -0400
+
+    Update Postgres to 14.0
+
+[33mcommit c3ebf56463d9d8e9c8cf5f88c45ecbc727379c82[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Sun Oct 10 09:35:21 2021 -0400
+
+    Update Redis to 6.2.6
+
+[33mcommit c1b2c4c0245d9f4b34f101099af98983834681da[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Sun Aug 22 10:01:53 2021 -0400
+
+    Update Redis version
+
+[33mcommit 47d7b4f73328a729c49c0f4b26132431be4564a4[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Sun Aug 22 09:56:41 2021 -0400
+
+    Update Ruby and Node base images
+
+[33mcommit b1a1c475729c8fc947f6dbfc4a273449e8a07abc[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Sat Aug 21 06:53:01 2021 -0400
+
+    Update Ruby dependencies
+
+[33mcommit f46d31c46d76f1e1ddb018e63679d76de10c85d3[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Thu Aug 5 10:33:36 2021 -0400
+
+    Update Node dependencies
+
+[33mcommit 90995b0c876e06470a2d954d46f4b557105000d6[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Thu Aug 5 09:44:02 2021 -0400
+
+    Update Ruby dependencies
+
+[33mcommit 360b65db459cfd2251ba2085fd03dfa7076b64f2[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Fri Jul 23 20:04:20 2021 -0400
+
+    Add Docker best practices blog post link
+
+[33mcommit 00b1acadbd5484ff563889b9d674991cf0f5e5b4[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Sat Jul 17 18:52:15 2021 -0400
+
+    Update dependencies
+
+[33mcommit 8b0344ded1e52f524e39b618fcfe6f6fe862b6fb[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Mon Jul 5 06:00:17 2021 -0400
+
+    Update Hotwire domain since it changed
+
+[33mcommit 479acede2c7300d4d11bfad08cfb5b6ae1a20efe[m[33m ([m[1;33mtag: 0.4.0[m[33m)[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Thu Jul 1 07:24:52 2021 -0400
+
+    Update Changelog and release 0.4.0
+
+[33mcommit e4db8da8d6b01dfa0acff31d3757eb2ba8bfdfd6[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Thu Jul 1 07:22:32 2021 -0400
+
+    Add StimulusJS imports into application.js
+
+[33mcommit 85f09b896435eea93680592e5d8b8cc34f8e993f[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Thu Jul 1 07:04:55 2021 -0400
+
+    Fix Webpacker pre.2 being installed w/o lock file
+    
+    The pessimistic operator thinks pre.2 is newer than beta.7.
+
+[33mcommit 576897f6375e498ddc58bdcab79ac70da6c20c07[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Thu Jul 1 07:03:54 2021 -0400
+
+    Update Rails to 6.1.4
+
+[33mcommit 659de6e99bf4c01aeea7bfd54104503cd2d36ae9[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Thu Jul 1 06:57:20 2021 -0400
+
+    Update TailwindCSS to 2.2.4
+
+[33mcommit 3dca48e4bdefebd01e0da2c53c1d5efda1abf8bf[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Thu Jul 1 06:47:11 2021 -0400
+
+    Fix JavaScript not executing
+    
+    This was due to the Gemfile.lock file having a reference to an older
+    version of Webpacker (pre.2) that would have required us to use the
+    javascript_packs_with_chunks_tag tag for things to work.
+    
+    But upgrading to beta.7 fixes things so we can continue using the
+    existing javascript_pack_tag.
+
+[33mcommit eec7bc49517b492cec225c5f038b552a0d8ebe76[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Fri Jun 18 13:07:57 2021 -0400
+
+    Update front-end dependencies
+
+[33mcommit 3d9eba8c2dd7d426e2c541a71b896a39d170b797[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Fri Jun 18 12:59:23 2021 -0400
+
+    Update various Ruby dependencies
+
+[33mcommit ac4205bcaf3de7323955d89f6913dda0fb07ec63[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Sat Jun 5 10:39:36 2021 -0400
+
+    Link to Makefile vs shell script blog post
+
+[33mcommit 7b08daf943a6810b84fc040c9943d5bd59aee685[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Sat May 29 17:16:01 2021 -0400
+
+    Fix bundle install from running multiple times
+    
+    Thanks for the idea @smshuja!
+
+[33mcommit 0e4298ccc93e2b4952c1f17196014ddee37bc594[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Sat May 29 17:11:51 2021 -0400
+
+    Update Puma from 5.3.1 to 5.3.2
+
+[33mcommit 2985a162e54bd20dcf4b278ab5e060eb2c719f73[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Wed May 19 09:24:15 2021 -0400
+
+    Update Changelog and release 0.3.0
+
+[33mcommit c849173329d9b94fbd06cc214646c7e402ba33c0[m[33m ([m[1;33mtag: 0.3.0[m[33m)[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Wed May 19 09:22:14 2021 -0400
+
+    Enable JIT compiler for Tailwind
+    
+    Ok that turned out to be easier than expected. A bit of Googling lead to
+    a blog post where someone mentioned to do this, and now it works!
+
+[33mcommit cd0c763da79532c090ff983a8a6f124a90d5431b[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Wed May 19 09:15:05 2021 -0400
+
+    Disable JIT compiler for Tailwind
+    
+    This is causing tests to compile forever. It will be enabled again in the
+    future, perhaps after Webpacker 6 is officially out or a fix is
+    discovered.
+
+[33mcommit 58f754ba0f3a4219d71b50fd10edb907e8b6c686[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Wed May 19 08:29:54 2021 -0400
+
+    Move tailwind.config.js to the root of the project
+
+[33mcommit df7abe84c69f8aec58b10d978c25aad36b46413e[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Wed May 19 08:27:35 2021 -0400
+
+    Update TailwindCSS to 2.1 and enable JIT compiler
+
+[33mcommit 07440bf5a42447e40c8b278255e2ecae29ecea2c[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Wed May 19 08:22:07 2021 -0400
+
+    Update PostgreSQL and Redis versions
+
+[33mcommit 3cbe26b5dcc5c951e16d564698ad3e02cff2e6e7[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Wed May 19 08:21:53 2021 -0400
+
+    Update screenshot for newer versions
+
+[33mcommit f901c71dcdcf5463b39ace42eaed7b4a69d4fcce[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Wed May 19 08:09:16 2021 -0400
+
+    Update to Webpacker 6.0-beta 7
+
+[33mcommit 54b33f527f66f728da83f4593bfae178c7e7a9a1[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Wed May 19 07:10:59 2021 -0400
+
+    Remove unnecessary /public directory
+
+[33mcommit 9c32b8a2270a32bb9d593efe150ab28e021f70ef[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Wed May 19 07:10:09 2021 -0400
+
+    Remove unnecessary creation of /public
+
+[33mcommit 56009f69f162350c8a015bddc4e7182c80211f31[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Wed May 19 07:09:10 2021 -0400
+
+    Update Ruby to 3.0.1
+
+[33mcommit 768b2b8e4bbe9f5d8efcfe19af03e1692f32b1a4[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Wed May 19 06:25:38 2021 -0400
+
+    Update various Ruby dependencies
+
+[33mcommit 70eca4559b9ccd16b1f745efc6e2bba84e85ad61[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Mon May 10 18:23:55 2021 -0400
+
+    Improve grammar in the .env documentation
+
+[33mcommit fe5aeeea3b1e3bd5f9aa492649fdc6803c3b5f11[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Sat Apr 17 07:56:57 2021 -0400
+
+    Optimize perl script for finding / replacing text
+
+[33mcommit 7f90f533dc6fb0f76d7672ad2faf1673139d2ccc[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Sat Apr 17 07:56:39 2021 -0400
+
+    Move delete script paragraph up a bit
+
+[33mcommit 2b6d8bf8dfe341a33640862791c7b1f96249ec47[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Fri Apr 16 15:19:45 2021 -0400
+
+    Fix git init logic so it works without a git dir
+
+[33mcommit 5156e620a18f4c28e42ff0cd8998f0003348ab5b[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Fri Apr 16 10:32:26 2021 -0400
+
+    Improve and refactor customize project script
+    
+    Renaming it to rename-project and putting it in the bin/ directory makes
+    more sense because technically you can keep this script around to help
+    you rename your project more than once.
+
+[33mcommit c5e2c50559dbff5497cb9f39a92d21e69f85ef46[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Thu Apr 15 17:21:40 2021 -0400
+
+    Update customize script link in docs
+
+[33mcommit d6b4587fb3e502c7cc49e60673e9db3c7c2a7eca[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Thu Apr 15 17:02:33 2021 -0400
+
+    Add customize script to help rename the project
+
+[33mcommit 06ea6d2b75f4e5ed19c601a4172b6d4096aca557[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Wed Apr 14 18:35:01 2021 -0400
+
+    Replace APP_NAME with POSTGRES_USER in run script
+
+[33mcommit 6c9f62e1058c7c5110f3450e4a55c543a4dda472[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Wed Apr 14 18:23:35 2021 -0400
+
+    Fix unbound var in run script
+    
+    On some versions of macOS using set -u with $@ does not work because it
+    will think $@ is unbound. This is likely due to macOS using a very old
+    version of Bash.
+
+[33mcommit 272456f38fe19bd6d55a4998bc3c28a3af8a2e55[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Wed Apr 14 18:17:57 2021 -0400
+
+    Set an empty ENTRYPOINT for the worker/AC services
+
+[33mcommit 18e5791f5824c9e6747a81932c9ec524b30d22fb[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Sun Apr 4 11:08:11 2021 -0400
+
+    Update Heroicons link to use the .com domain
+    
+    As it turns out the .dev version isn't the official site.
+
+[33mcommit 46436c63f7953326ae0ef446fbb8e61eaab40d21[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Sun Mar 28 11:40:10 2021 -0400
+
+    Update Rails to 6.1.3.1 to fix imagemagick
+    
+    There were licensing issues and the version Rails used previously is no
+    longer available.
+
+[33mcommit 204fd1b9f20c15df67d1fa83b4e3a76ca368e99e[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Sun Mar 28 11:29:48 2021 -0400
+
+    Update web-console config to use 0.0.0.0/0 in dev
+
+[33mcommit bd36ffe3c76ace4de49c1e9fe82631943d9ed9f6[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Sun Mar 21 14:07:19 2021 -0400
+
+    Add web console support to work with Docker in dev
+
+[33mcommit da695768d0e0e450d7ec73c1512a50f5d7e1a38a[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Sat Feb 27 11:55:21 2021 -0500
+
+    Update run script to use # for comments, not ##
+
+[33mcommit 3df0f1fb09c89e8bac0e16c3de28feef21c2b5f8[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Thu Feb 25 10:29:56 2021 -0500
+
+    Add front-end link to Heroicons
+
+[33mcommit 5da5994e7478e10f6ec8bee3a26fec8075310c12[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Wed Feb 24 08:47:44 2021 -0500
+
+    Add run cmd and refactor existing run functions
+
+[33mcommit 8b15ce31ea33c13828e25ed6881cbed8fd7d5f4b[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Mon Feb 22 10:54:06 2021 -0500
+
+    Reference correct Rails version
+
+[33mcommit 5df97906c6f404750dfbc70e90acf4ed70b32040[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Sat Feb 20 20:41:51 2021 -0500
+
+    Comment out Sidekiq's web dashboard by default
+    
+    Since this project doesn't include Devise or any type of user
+    authentication it's a good idea to have this disabled by default.
+    
+    Comments are provided to enable it for all users or protect it to only
+    admins if you happen to be using Devise.
+
+[33mcommit 943b97336cd868622295214e4893b2b2ad8e565f[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Sat Feb 20 20:23:43 2021 -0500
+
+    Add PORT and CABLE_PORT env variables
+    
+    Heroku and other hosting providers will set the PORT env variable so
+    for maximum compatibility let's use it in this project.
+    
+    This works out better anyways because now the Docker port forward and
+    puma bind port are separate values. Likewise the same applies to the new
+    cable port variables.
+    
+    Also hard coding the puma bind address to 0.0.0.0 because there's
+    really no case to use something else.
+
+[33mcommit da1e96b2afe3617bb43871c9da4f4dedac24acba[m
+Merge: 3dac2b1 7f65fb0
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Sat Feb 20 19:28:41 2021 -0500
+
+    Merge pull request #7 from nickjj/feature-remove-ci-cache
+    
+    Remove Docker layer cache GH Action
+
+[33mcommit 7f65fb08f3ff8ce5141766191591ea7d60d6a23d[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Sat Feb 20 19:21:06 2021 -0500
+
+    Remove Docker layer cache GH Action
+
+[33mcommit 3dac2b1edb5ebad7373c4138ceef4a9bc223b5c7[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Sat Feb 20 17:33:47 2021 -0500
+
+    Update Changelog and release 0.2.0
+
+[33mcommit 86725c2e7b3ec9b46f8c148fcf68e92a8c50222e[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Sat Feb 20 17:19:36 2021 -0500
+
+    Add bundle:update task to update your gems
+
+[33mcommit 196ad90cd3bb4c226393abc1878bd8888e07c1bb[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Sat Feb 20 17:18:44 2021 -0500
+
+    Update service and package dependencies
+
+[33mcommit ee5095906641db39d10ccce5a9b65c9b61eb26da[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Sat Feb 20 16:51:05 2021 -0500
+
+    Refactor run script to use helper functions
+    
+    This is a nice reduction in duplicate code while still keeping things
+    readable in the end.
+    
+    Although this isn't a proper 100% perfect solution. We're filting out
+    these helper functions in the task's help menu but technically you can
+    still run them directly, such as: run _dc
+    
+    But still, this is very much worth it. Just don't run the helper functions
+    directly and it's all good!
+
+[33mcommit c002a866354c557c40e3f892f897964a39f769b0[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Sat Feb 20 16:41:31 2021 -0500
+
+    Add -u and -o pipefail to run script
+    
+    This makes the script a bit more robust.
+    
+    -e makes the script halt on any error
+    -u exits out when encountering an undefined variable
+    -o pipefail exits out as soon as a command fails in a pipeline
+
+[33mcommit 533292026adcda15ca78a25a8dbfc1cabefc6e2c[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Sat Feb 20 16:40:22 2021 -0500
+
+    Add run tasks for listing outdated dependencies
+
+[33mcommit 8aa82b6fbed12c5d9269580c58003217062caca2[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Sat Feb 20 16:34:07 2021 -0500
+
+    Rename bundle and yarn install run tasks
+    
+    Technically they worked how they were named previously but it resulted
+    in a few questions being asked by folks because it's not immediately
+    obvious that they run their install commands by default.
+    
+    Plus I will be adding additional namespaced run tasks for bundle and
+    yarn and it's nice to have a unified way of accessing sub-commands for
+    these commands.
+
+[33mcommit 3a2b1dcda9f4033a0e61b664d9864b8d32bff4be[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Sat Feb 20 16:31:18 2021 -0500
+
+    Reorganize Changelog headings
+
+[33mcommit 98b2f3f5bccd3b5b682956d5731d933fbde9bc49[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Sun Feb 14 07:28:03 2021 -0500
+
+    Use compose commands to run rails test in CI
+    
+    We can't run rails test which automatically runs the webpacker:compile
+    command because in CI volumes aren't present.
+    
+    I should have read my own comment in the run script!
+    
+    This translates to running the docker-compose commands directly.
+
+[33mcommit 702de2c69aa237c25917937ddd5e90d268fc3c91[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Sun Feb 14 07:09:47 2021 -0500
+
+    Fix rails test command in CI
+    
+    Since it was running the docker-compose exec command directly it never
+    had a chance to execute the webpacker:compile command that automatically
+    runs when you run rails test through the rails function that exists in the
+    run script.
+    
+    This caused a `Webpacker can't find application.css` error because the
+    manifest was empty.
+
+[33mcommit ff0600676cf5d1ee28d2222cedfe8184c487da99[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Sun Feb 14 06:46:31 2021 -0500
+
+    Add rails test to the CI pipeline
+    
+    Using $@ was a copy / paste oversight.
+
+[33mcommit 86063984759d0f8dd0fd256aa462b9de6363227a[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Sun Jan 10 09:03:22 2021 -0500
+
+    Update Gemlock.lock file
+    
+    This fixes the Bundler warning about the lock file being generated with
+    a newer version.
+    
+    This stemmed from attempting to upgrade to Ruby 3.x, backing out of that
+    update but not recreating the lock file.
+
+[33mcommit d6a3522ceb48dcd7acb3b93db6b84932e4365e62[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Fri Jan 8 16:57:56 2021 -0500
+
+    Add unreleased diff link
+
+[33mcommit efb16756ec5037f8b3f99cc34b5dbadf026e3231[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Fri Jan 8 16:57:27 2021 -0500
+
+    Fix grammar mistake in changelog
+
+[33mcommit 7a51ea856dc84577cb816c3143d2d4b5d1470670[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Fri Jan 8 16:41:27 2021 -0500
+
+    Replace Turbolinks with Hotwire
+
+[33mcommit 324a53634ef8639c9779a19b78da9d8169807c57[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Sun Dec 27 10:27:21 2020 -0500
+
+    Ping Redis as part of the /up health check
+
+[33mcommit d406c95b6a7ef9935078066bcf0df1ab74bfc0cc[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Thu Dec 24 10:31:12 2020 -0500
+
+    Add docs on committing new changes
+
+[33mcommit 8528b3254f28c90dae96167dda5326b274bfb48d[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Thu Dec 24 10:26:33 2020 -0500
+
+    Lowercase the p in deploy to production
+
+[33mcommit 25b17e63c3cad71b056d95f52e3f477622fb903f[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Thu Dec 24 09:50:18 2020 -0500
+
+    Fix link to screenshot
+
+[33mcommit 6292274dfd49706250f6b0115f63c6edd10213a3[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Wed Dec 23 19:07:09 2020 -0500
+
+    Update docs to mention pages controller
+
+[33mcommit 8d55fddc10df7025860a509a2580fa7397a2134b[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Wed Dec 23 15:34:38 2020 -0500
+
+    Update unreleased changes
+
+[33mcommit 53e3416fe791719b6e2c5bd7c68b8d0c4bc55369[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Wed Dec 23 15:32:32 2020 -0500
+
+    Rename static controller to pages
+
+[33mcommit 9ccab8e9ca9ae3772b2c026f073412b781a6139c[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Wed Dec 23 15:24:20 2020 -0500
+
+    Call rails s instead of puma directly
+
+[33mcommit 21f1b671a0d90687653e53d301dc532863ce6229[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Wed Dec 23 15:09:30 2020 -0500
+
+    Update 502 page title to be more clear
+
+[33mcommit 7300a6014711a2ac8b0d535a396541e91d8447e7[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Wed Dec 23 15:09:04 2020 -0500
+
+    Change meta description
+
+[33mcommit 81e21b1afcc083bbe59438c92a8a3ab752b0ce8e[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Wed Dec 23 15:07:38 2020 -0500
+
+    Add ref to course links
+    
+    I'm not trying to track you, but knowing if someone reached the course
+    from this project really helps me figure out where I should be best
+    spending time with open source work.
+
+[33mcommit 5ad6caaf914ee07193678a0682607cb5304597d9[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Tue Dec 22 15:35:06 2020 -0500
+
+    Before more specific that it's this app
+
+[33mcommit 1ac08a6164619add98eeae9fe0dc2ecae28dfe12[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Tue Dec 22 15:30:32 2020 -0500
+
+    Fix grammar mistake in find / replace command
+
+[33mcommit ab9fa6f4521908ee05bf7caa583fb8a140ea71cf[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Tue Dec 22 15:29:13 2020 -0500
+
+    Remove 'ing' suffix on removing header
+
+[33mcommit cc7ff205dca03c560cddad391108ddfa69743fd4[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Tue Dec 22 15:25:23 2020 -0500
+
+    Rephrase database.yml bullet point
+
+[33mcommit 6b23a0b9416793a80c6b7826637c20f5e19064da[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Tue Dec 22 15:22:28 2020 -0500
+
+    Make version sentence fit on 1 line
+
+[33mcommit 7e2256eccaff7043c83445dfcbf54a0771cb1555[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Tue Dec 22 15:22:10 2020 -0500
+
+    Rephrase million opinions sentence
+
+[33mcommit f0b4ea6e4e0547a7a1f84f6eb0d94dfd26e1c6bf[m[33m ([m[1;33mtag: 0.1.0[m[33m)[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Tue Dec 22 15:19:09 2020 -0500
+
+    Release 0.1.0
+
+[33mcommit ca7e4d8b4ebe465296b814abb2e91e12f66518db[m
+Author: Nick Janetakis <nick.janetakis@gmail.com>
+Date:   Tue Dec 22 15:12:19 2020 -0500
+
+    Initial commit

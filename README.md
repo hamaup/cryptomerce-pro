@@ -1,6 +1,9 @@
+
+
+
 # An example Rails + Docker app
 
-![CI](https://github.com/nickjj/docker-rails-example/workflows/CI/badge.svg?branch=main)
+![CI](exitworkflows/CI/badge.svg?branch=main)
 
 You could use this example app as a base for your new project or as a guide to
 Dockerize your existing Rails app.
@@ -14,7 +17,7 @@ practices](https://nickjanetakis.com/blog/best-practices-around-production-ready
 based on building and deploying dozens of assorted Dockerized web apps since
 late 2014.
 
-**This app is using Rails 7.0.4.2 and Ruby 3.2.1**. The screenshot doesn't get
+**This app is using Rails 7.0.4 and Ruby 3.2.0**. The screenshot doesn't get
 updated every time I bump the versions:
 
 [![Screenshot](.github/docs/screenshot.jpg)](https://github.com/nickjj/docker-rails-example/blob/main/.github/docs/screenshot.jpg?raw=true)
@@ -70,7 +73,7 @@ Dockerize an existing Rails app.
     - Add `pages` controller with a home page
     - Add `up` controller with 2 health check related actions
 - **Config**:
-    - Log to STDOUT so that Docker can consume and deal with log output 
+    - Log to STDOUT so that Docker can consume and deal with log output
     - Credentials are removed (secrets are loaded in with an `.env` file)
     - Extract a bunch of configuration settings into environment variables
     - Rewrite `config/database.yml` to use environment variables
@@ -362,7 +365,7 @@ couple of free and paid resources. There's Google too!
 
 ### Learn more about Docker and Ruby on Rails
 
-#### Official documentation 
+#### Official documentation
 
 - <https://docs.docker.com/>
 - <https://guides.rubyonrails.org/>
