@@ -7,8 +7,7 @@
 
 ##### windows Gadget
 
-https://user-images.githubusercontent.com/32893785/222901266-e027be0d-0a9f-44b1-83a7-a0b1baa214d5.mov
-
+https://user-images.githubusercontent.com/32893785/222903584-87eb8ffb-95bb-4b55-8e1a-d061c2572b12.mp4
 
 #### モバイル
 
