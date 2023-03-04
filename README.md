@@ -5,6 +5,11 @@
 
 #### PC
 
+##### windows Gadget
+
+https://user-images.githubusercontent.com/32893785/222901266-e027be0d-0a9f-44b1-83a7-a0b1baa214d5.mov
+
+
 https://user-images.githubusercontent.com/32893785/219312005-0c138ca6-35d4-46dd-b8b7-1ebf8d9323dc.mov
 
 #### モバイル
